@@ -11,11 +11,13 @@
 }
 
 .header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   border: 1px solid red;
-  display: flex;
   /* выше установили ограничения для секции */
 }
 
@@ -33,7 +35,7 @@
   margin-top: 80px;
 }
 
-.header__logo {
+.logo_place_header {
   position: absolute;
   height: 32px;
   width: 183px;
@@ -43,19 +45,58 @@
   border: 1px solid red;
 }
 
-.header__title-box {
-  width: 730px;
-  margin: auto auto auto 64px;
-}
-  
+
 .header__title {
-font-size: 102px;
-font-weight: bolder;
+  display: flex;
+  align-items: center;
+  margin: auto auto auto 64px;
+  width: 730px;
+  
+  font-size: 102px;
+  font-weight: bolder;
+/* нужно ли указывать высоту строк? */
 border: 1px solid red;
 }
 
+
 .header__subtitle {
+  position: absolute;
+  bottom: 0;
+  float: unset;
   width: 388px;
   margin: auto auto 30px 64px;
+  font-size: 18px;
+  font-weight: normal;
+/* нужно ли указывать высоту строк? */
   border: 1px solid red;
+}
+
+.header_subtitle_link {
+  color: #2f80ed;
+}
+
+.header__main-illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 765px;
+  height: 608px;
+  background-image: url(../images/header-image.png);
+  border: 1px solid red;
+  margin-bottom: 0;
+  margin-right: 0;
+  z-index: 2;
+  
+}
+
+
+.header__square-pic {
+  position: absolute;
+  right: 0;
+  top: 64px;
+  width: 568px;
+  height: 568px;
+  border: 1px solid red;
+  background-color: #2f80ed;
+  z-index: 1;
 }
