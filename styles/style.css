@@ -1,3 +1,16 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -13,6 +26,7 @@
   min-height: 600px;
   max-height: 756px;
   background-color:  #f2f2f2;
+  overflow: hidden;
 }
 
 .logo_place_header {
@@ -115,6 +129,37 @@
 .two-columns__span-accent {
   font-weight: bold;
 }
+
+.techniques {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .digits {
   display: flex;
