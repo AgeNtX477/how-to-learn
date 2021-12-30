@@ -3,6 +3,7 @@
     height: 38px;
     list-style-type: none;
     text-align: center;
+    transition: .3s;
   }
 
   .resources__logo:hover {
